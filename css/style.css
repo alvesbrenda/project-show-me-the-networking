@@ -10,11 +10,6 @@ body {
     padding-top: 5%;
 }
 
-.principal {
-    color: #fff;
-    text-align: center;
-}
-
 h1 {
     font-weight: normal;
     font-size: 100px;
@@ -36,4 +31,58 @@ li {
 li span {
     display: block;
     font-size: 4.5rem;
+}
+
+#contador {
+    color: #fff;
+    text-align: center;
+}
+
+#cadastre {}
+
+#evento {}
+
+
+/*----Style do popup------*/
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 1;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+.modalDialog>div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+
+/*botão vermelho com X no meio */
+
+.fechar {
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #ff4545;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #652222;
+    cursor: pointer
 }

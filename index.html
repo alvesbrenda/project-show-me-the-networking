@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="principal">
+    <section id="contador">
         <h1>Salus</h1>
         <h2>Bem estar descomplicado</h2>
         <!-- <table style="border: 2px outset #36b; padding: 1em;">
@@ -23,17 +23,49 @@
                         <strong>Sa</strong><strong style="font-family: 'Dancing Script', cursive;"> l </strong><strong>us</strong>
                     </td>
                 </tr>
-
             </tbody>
         </table> -->
-        <ul>
+
+        <!-- Tabela do contador -->
+        <ul id="tempo">
             <li><span id="days"></span>Dias</li>
             <li><span id="hours"></span>Horas</li>
             <li><span id="minutes"></span>Minutos</li>
             <li><span id="seconds"></span>Segundos</li>
         </ul>
-    </div>
-    </div>
+        <!-- Fim tabela do contador -->
+
+        <!-- Fica escondido até que o contador chegar no horário do evento -->
+        <h2 id="inicio">Evento começou!</h2>
+    </section>
+
+    <section id="evento"></section>
+    <section id="cadastre"></section>
+
+    <!-- <section id="popup">
+        <h2>O Popup abriu</h2>
+        <div class="modal" id="id_que_voce_quiser">
+            <div class="modal-box" style="max-width: 400px">
+                <div class="modal-header"></div>
+                <div class="modal-content" id="modal-load">
+                    Aqui você coloca o conteúdo do jeito que quiser
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section id="popup">
+        <div id="openModal" class="modalDialog">
+            <div>
+                <a class="fechar" onclick="document.getElementById('popup').style.display = 'none'">x</a>
+                <!-- Conteúdo do Modal -->
+                <h2>Análise fiscal?</h2>
+                <p>O status de "Análise Fiscal".
+                </p>
+                <hr>
+                <!-- Conteúdo do Modal -->
+            </div>
+        </div>
+    </section>
 
 </body>
 

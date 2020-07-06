@@ -1,11 +1,12 @@
+//Conversor de segundo/minuto/hora/dia
 const second = 1000,
     minute = second * 60,
     hour = minute * 60,
     day = hour * 24;
 
-let countDown = new Date('Jul 9, 2020 21:30:00').getTime(),
+//Colocar a data/hora do evento
+let countDown = new Date('Jul 8, 2020 20:00:00').getTime(),
     x = setInterval(function() {
-
 
         let now = new Date().getTime(),
             distance = countDown - now;
@@ -15,19 +16,16 @@ let countDown = new Date('Jul 9, 2020 21:30:00').getTime(),
             document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
             document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
 
-        //do something later when date is reached
-        //if (distance < 0) {
-        //  clearInterval(x);
-        //  'IT'S MY BIRTHDAY!;
-        //}
+
+        document.getElementById("inicio").style.display = 'none';
 
         if (distance < 0) {
             clearInterval(x);
+            //Vai exibir o direcionamento pro evento
+            document.getElementById("inicio").style.display = 'block';
+            //Vai esconder o contador
+            document.getElementById("tempo").style.display = 'none';
         }
-
-
-
-
     }, second)
 
 var time = day,
@@ -40,3 +38,47 @@ function start() {
         time = '0' + time;
     }
 }
+
+
+
+//Script do popup
+function addEvent(obj, evt, fn) {
+    if (obj.addEventListener) {
+        obj.addEventListener(evt, fn, false);
+    } else if (obj.attachEvent) {
+        obj.attachEvent("on" + evt, fn);
+    }
+}
+
+addEvent(window, "load", function(e) {
+    //section Popup escondida
+    document.getElementById("popup").style.display = 'none';
+
+    addEvent(document, "mouseout", function(e) {
+        e = e ? e : window.event;
+        var from = e.relatedTarget || e.toElement;
+
+
+        if (!from || from.nodeName == "HTML") {
+            // Aqui você coloca o seu popup
+            document.getElementById("popup").style.display = 'block';
+        }
+    });
+});
+
+/* //Valida se o modal já foi aberto
+$('.close').click(function(event) {
+    $('#popup').fadeOut();
+    event.preventDefault();
+});
+
+$(document).ready(function() {
+    var ls = localStorage.getItem("modal");
+    if (!ls) {
+        $('#popup').modal('show');
+    }
+})
+
+$('#popup').on('shown.bs.modal', function() {
+    localStorage.setItem("modal", false);
+}); */
