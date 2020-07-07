@@ -65,20 +65,3 @@ addEvent(window, "load", function(e) {
         }
     });
 });
-
-/* //Valida se o modal já foi aberto
-$('.close').click(function(event) {
-    $('#popup').fadeOut();
-    event.preventDefault();
-});
-
-$(document).ready(function() {
-    var ls = localStorage.getItem("modal");
-    if (!ls) {
-        $('#popup').modal('show');
-    }
-})
-
-$('#popup').on('shown.bs.modal', function() {
-    localStorage.setItem("modal", false);
-}); */
