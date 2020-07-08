@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'moderat_ss02_regularregular';
+    src: url('moderat_stylistic_set_02_regular-webfont.woff2') format('woff2'), url('moderat_stylistic_set_02_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,20 +13,224 @@
 }
 
 body {
-    background-color: #9287fd;
+    background-color: #fafafa;
     font-family: roboto;
-    padding-top: 5%;
-}
-
-h1 {
-    font-weight: normal;
-    font-size: 100px;
+    padding: 1% 2% 2% 3%;
+    width: 100%;
+    height: 100%;
 }
 
 h2 {
     margin-bottom: 5%;
     text-transform: uppercase;
 }
+
+.super {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.super:hover {
+    transform: translateY(-50%);
+    background-color: #696969;
+}
+
+.header {
+    font-family: Abril Fatface;
+    padding: 0% 5% 2% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    color: #333333;
+}
+
+.header>span {
+    font-size: 72px;
+    line-height: 73px;
+    margin: 0% 2% 0% 2%;
+}
+
+.cadastre {
+    padding: 1% 4% 1% 10%;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-color: #4d4d4d;
+    background-color: #fafafa;
+    align-items: left;
+}
+
+.super>#btn1 {
+    font-family: Moderat_ss02 Regular;
+    padding: 8px 30px 8px 30px;
+    border: none;
+    border-radius: 5%;
+    color: #fafafa;
+    background-image: linear-gradient(+90deg, #7bb7fc, #9287fd);
+}
+
+#btn2 {
+    font-family: Moderat_ss02 Regular;
+    padding: 8px 30px 8px 30px;
+    border: none;
+    border-radius: 5%;
+    color: #fafafa;
+    background-image: linear-gradient(+90deg, #7bb7fc, #9287fd);
+}
+
+.call-to-action {
+    font-family: Moderat_ss02 Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 34px;
+    color: #333333;
+    margin: 0% 0% 3% 10%;
+}
+
+.call-to-action>span {
+    margin-bottom: 2%;
+}
+
+
+.top-card {
+    height: 78px;
+    left: calc(50% - 1092px/2);
+    top: 1327px;
+    font-family: Moderat_ss02 Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: #333333;
+}
+
+.img-div {
+    text-align: center;
+  }
+
+.mid-card {
+    font-family: Moderat_ss02 Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 180.5%;
+    text-align: center;
+    color: #333333;
+    height: 115px;
+    left: calc(50% - 1076px/2);
+    top: 1640px;
+    }
+
+.social-media {
+    text-align: center;
+  }
+  
+
+.Convidados {
+   text-align: initial;
+   font-family: Abril Fatface;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 72px;
+   line-height: 73px;
+   color: #333333;
+  }
+
+  .contador {
+    position: absolute
+    width: 1068px;
+    height: 300px;
+    left: calc(50% - 1068px/2);
+    top: 1963px;
+    background: #8F00FF;
+  }
+      
+#contador {
+    font-family:Roboto;
+    color:#FFFFFF;
+    text-align: center;
+    font-style: normal;
+}
+
+.retangulo2{
+    position: absolute;
+    width: 1442px;
+    height: 283px;
+    left: calc(50% - 1442px/2 + 2px);
+    top: 906px;
+    background: #FFFFFF;
+    box-shadow: 0px 1.59277px 3.18553px rgba(50, 50, 71, 0.06), 0px 1.59277px 1.59277px rgba(50, 50, 71, 0.08);
+    border-radius: 4px;
+}
+
+.evento {
+position: absolute;
+width: 572px;
+height: 120px;
+left: calc(50% - 572px/2 + 16px);
+top: 942px;
+font-family: Moderat_ss02 Regular;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 43px;
+color: #333333;
+}
+
+
+/*----Style do popup------*/
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 1;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+.modalDialog>div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+
+/*botão vermelho com X no meio */
+
+.fechar {
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #ff4545;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #652222;
+    cursor: pointer
+}
+
+
+/*Contador*/
 
 li {
     display: inline-block;
@@ -32,16 +244,6 @@ li span {
     display: block;
     font-size: 4.5rem;
 }
-
-#contador {
-    color: #fff;
-    text-align: center;
-}
-
-#cadastre {}
-
-#evento {}
-
 
 /*----Style do popup------*/
 
