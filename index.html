@@ -75,33 +75,58 @@
     <link rel="icon" type="image/x-icon" href="img/favico.ico">
 
     <title>Salus</title>
+
 </head>
 
 <body>
-    <section id="contador">
+    <section id="cadastre">
+        <div class="super">
+            <img src="img/logo_escuro.png" style="margin-right:350%">
+            <input id="btn1" type="submit" value="Quero participar" />
+        </div>
+        <div class="header">
+            <span>Inteligência Emocional em Tempos de Pandemia</span>
+            <img src="img/pessoa.png">
+        </div>
+        <div class="call-to-action">
+            <span>Como você tem lidado com o isolamento social?</span><br>
+            <span>Tem enfrentado muitos problemas neste período?</span><br>
+            <span>Participe da nossa live!</span>
+            <div class="flex-direction: row;" style="margin-top:3%">
+                <input class="cadastre" style="text-align:left" type="text" id="nome" name="nome" placeholder="Nome" required> &nbsp;&nbsp;
+                <input class="cadastre" style="text-align:left" type="email" id="email" name="email" placeholder="E-mail" required> &nbsp;&nbsp;
+                <input id="btn2" type="submit" value="Quero participar" />
+            </div>
+        </div>
+    </section>
+
+    <section id=" evento ">
+
+    </section>
+
+    <section id="informativo ">
+
+    </section>
+    <section id="contador ">
         <h1>Salus</h1>
         <h2>Bem estar descomplicado</h2>
 
         <!-- Tabela do contador -->
-        <ul id="tempo">
-            <li><span id="days"></span>Dias</li>
-            <li><span id="hours"></span>Horas</li>
-            <li><span id="minutes"></span>Minutos</li>
-            <li><span id="seconds"></span>Segundos</li>
+        <ul id="tempo ">
+            <li><span id="days "></span>Dias</li>
+            <li><span id="hours "></span>Horas</li>
+            <li><span id="minutes "></span>Minutos</li>
+            <li><span id="seconds "></span>Segundos</li>
         </ul>
         <!-- Fim tabela do contador -->
 
         <!-- Fica escondido até que o contador chegar no horário do evento -->
-        <h2 id="inicio">Evento começou!</h2>
+        <h2 id="inicio ">Evento começou!</h2>
     </section>
-
-    <section id="evento"></section>
-    <section id="cadastre"></section>
-
     <section id="popup">
-        <div id="openModal" class="modalDialog">
+        <div id="openModal " class="modalDialog ">
             <div>
-                <a class="fechar" onclick="document.getElementById('popup').style.display = 'none'">x</a>
+                <a class="fechar" onclick="document.getElementById( 'popup').style.display='none'">x</a>
                 <!-- Conteúdo do Modal -->
                 <h2>Volte!</h2>
                 <p>Faça seu cadastro e volte.</p>
