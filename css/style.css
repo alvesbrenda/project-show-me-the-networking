@@ -33,11 +33,6 @@ h2 {
     flex-direction: row;
 }
 
-.super:hover {
-    transform: translateY(-50%);
-    background-color: #696969;
-}
-
 .header {
     font-family: Abril Fatface;
     padding: 0% 5% 2% 10%;
@@ -70,6 +65,7 @@ h2 {
     border: none;
     border-radius: 5%;
     color: #fafafa;
+    cursor: pointer;
     background-image: linear-gradient(+90deg, #7bb7fc, #9287fd);
 }
 
@@ -78,6 +74,7 @@ h2 {
     border: none;
     border-radius: 5%;
     font-size: 17px;
+    cursor: pointer;
     color: #fafafa;
     background-image: linear-gradient(+90deg, #7bb7fc, #9287fd);
 }
@@ -91,6 +88,7 @@ h2 {
     border: none;
     border-radius: 5%;
     color: #fafafa;
+    cursor: pointer;
     background-image: linear-gradient(+90deg, #7bb7fc, #9287fd);
     margin-bottom: 5%;
 }
