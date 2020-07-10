@@ -73,17 +73,29 @@ h2 {
     background-image: linear-gradient(+90deg, #7bb7fc, #9287fd);
 }
 
-#btn2 {
-    font-family: Moderat_ss02 Regular;
-    padding: 8px 30px 8px 30px;
+.btn2 {
+    padding: 8px 0px 8px 30px;
     border: none;
     border-radius: 5%;
+    font-size: 17px;
     color: #fafafa;
     background-image: linear-gradient(+90deg, #7bb7fc, #9287fd);
 }
 
+#inicio {
+    margin-top: 5%;
+}
+
+#btn_avalie {
+    padding: 8px 0px 8px 30px;
+    border: none;
+    border-radius: 5%;
+    color: #fafafa;
+    background-image: linear-gradient(+90deg, #7bb7fc, #9287fd);
+    margin-bottom: 5%;
+}
+
 .call-to-action {
-    font-family: Moderat_ss02 Regular;
     font-style: normal;
     font-weight: normal;
     font-size: 28px;
@@ -95,7 +107,6 @@ h2 {
 .call-to-action>span {
     margin-bottom: 2%;
 }
-
 
 .top-card {
     height: 78px;
@@ -109,11 +120,17 @@ h2 {
     text-align: center;
     letter-spacing: -0.04em;
     color: #333333;
+    margin: 5% 0% 0% 5%;
 }
 
 .img-div {
     text-align: center;
-  }
+    margin: 2% 0% 2% 2%;
+}
+
+.img-div>img {
+    margin: 2% 0% 2% 2%;
+}
 
 .mid-card {
     font-family: Moderat_ss02 Regular;
@@ -123,65 +140,70 @@ h2 {
     line-height: 180.5%;
     text-align: center;
     color: #333333;
-    height: 115px;
-    left: calc(50% - 1076px/2);
-    top: 1640px;
-    }
+    margin: 5% 0% 0% 5%;
+}
 
 .social-media {
     text-align: center;
-  }
-  
+}
 
 .Convidados {
-   text-align: initial;
-   font-family: Abril Fatface;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 72px;
-   line-height: 73px;
-   color: #333333;
-  }
+    text-align: initial;
+    font-family: Abril Fatface;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 73px;
+    color: #333333;
+}
 
-  .contador {
-    position: absolute
+.contador {
+    position: absolute;
     width: 1068px;
-    height: 300px;
-    left: calc(50% - 1068px/2);
-    top: 1963px;
+    left: 15%;
+    top: 1800px;
     background: #8F00FF;
-  }
-      
+}
+
 #contador {
-    font-family:Roboto;
-    color:#FFFFFF;
+    font-family: Roboto;
+    color: #FFFFFF;
     text-align: center;
     font-style: normal;
 }
 
-.retangulo2{
-    position: absolute;
-    width: 1442px;
-    height: 283px;
-    left: calc(50% - 1442px/2 + 2px);
-    top: 906px;
+.retangulo2 {
     background: #FFFFFF;
     box-shadow: 0px 1.59277px 3.18553px rgba(50, 50, 71, 0.06), 0px 1.59277px 1.59277px rgba(50, 50, 71, 0.08);
     border-radius: 4px;
+    left: 15%;
+    margin: 5% 0% 5% 10%;
+    text-align: center;
 }
 
-.evento {
-position: absolute;
-width: 572px;
-height: 120px;
-left: calc(50% - 572px/2 + 16px);
-top: 942px;
-font-family: Moderat_ss02 Regular;
-font-style: normal;
-font-weight: normal;
-font-size: 36px;
-line-height: 43px;
-color: #333333;
+.onde {
+    text-align: left;
+    margin: 0% 0% 0% 27%;
+    font-size: 28px;
+}
+
+.informativo {
+    color: #9A79FE;
+    margin: 0% 13% 0% 0%;
+}
+
+#evento {
+    position: absolute;
+    width: 572px;
+    height: 120px;
+    left: calc(50% - 572px/2 + 16px);
+    top: 942px;
+    font-family: Moderat_ss02 Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    color: #333333;
 }
 
 
@@ -244,6 +266,7 @@ li span {
     display: block;
     font-size: 4.5rem;
 }
+
 
 /*----Style do popup------*/
 
