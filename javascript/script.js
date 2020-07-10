@@ -5,7 +5,7 @@ const second = 1000,
     day = hour * 24;
 
 //Colocar a data/hora do evento
-let countDown = new Date('Jul 8, 2020 20:00:00').getTime(),
+let countDown = new Date('Jul 19, 2020 20:00:00').getTime(),
     x = setInterval(function() {
 
         let now = new Date().getTime(),
@@ -17,7 +17,7 @@ let countDown = new Date('Jul 8, 2020 20:00:00').getTime(),
             document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
 
 
-        document.getElementById("inicio").style.display = 'none';
+
 
         if (distance < 0) {
             clearInterval(x);
