@@ -21,8 +21,6 @@ let countDown = new Date('Jul 8, 2020 20:00:00').getTime(),
         document.getElementById('minutes2').innerText = 0;
         document.getElementById('seconds2').innerText = 0;
 
-
-
         if (distance < 0) {
             clearInterval(x);
             //Vai exibir o direcionamento pro evento
@@ -44,7 +42,6 @@ function start() {
         time = '0' + time;
     }
 }
-
 
 
 //Script do popup
@@ -71,3 +68,25 @@ addEvent(window, "load", function(e) {
         }
     });
 });
+
+
+/* 
+// intenção de sair
+function addEvent(obj, evt, fn) {
+
+    if (obj.addEventListener) {
+        obj.addEventListener(evt, fn, false);
+    } else if (obj.attachEvent) {
+        obj.attachEvent("on" + evt, fn);
+    }
+
+}
+
+// gatilho 
+addEvent(document, 'mouseout', function(evt) {
+
+    if (evt.toElement == null && evt.relatedTarget == null) {
+        $('#lightbox_overlay').slideUp();
+    };
+
+}); */
