@@ -311,3 +311,21 @@ li span {
     color: #652222;
     cursor: pointer
 }
+
+
+/* Responsivo */
+
+@media screen and(max-width:768px) {
+    .main {
+        position: relative;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    input>.btn2>.btn2>#btn1 {
+        max-width: 100%;
+        font-size: 30px;
+    }
+    img {
+        max-width: 100%;
+    }
+}
