@@ -5,17 +5,21 @@ const second = 1000,
     day = hour * 24;
 
 //Colocar a data/hora do evento
-let countDown = new Date('Jul 9, 2020 20:00:00').getTime(),
+let countDown = new Date('Jul 8, 2020 20:00:00').getTime(),
     x = setInterval(function() {
 
         let now = new Date().getTime(),
             distance = countDown - now;
 
-        document.getElementById('days').innerText = Math.floor(distance / (day)),
-            document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+        document.getElementById('days').innerText = Math.floor(distance / (day));
+        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
             document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
             document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
 
+        document.getElementById('days2').innerText = 0;
+        document.getElementById('hours2').innerText = 0;
+        document.getElementById('minutes2').innerText = 0;
+        document.getElementById('seconds2').innerText = 0;
 
 
 
@@ -23,8 +27,10 @@ let countDown = new Date('Jul 9, 2020 20:00:00').getTime(),
             clearInterval(x);
             //Vai exibir o direcionamento pro evento
             document.getElementById("inicio").style.display = 'block';
+            document.getElementById("tempo2").style.display = 'none';
             //Vai esconder o contador
             document.getElementById("tempo").style.display = 'none';
+            document.getElementById("tempo2").style.display = 'block';
         }
     }, second)
 
